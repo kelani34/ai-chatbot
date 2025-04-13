@@ -28,7 +28,7 @@ export default async function Page() {
   }
 
   return (
-    <>
+    <div className="container mx-auto">
       <Chat
         key={id}
         id={id}
@@ -38,6 +38,6 @@ export default async function Page() {
         isReadonly={false}
       />
       <DataStreamHandler id={id} />
-    </>
+    </div>
   );
 }
